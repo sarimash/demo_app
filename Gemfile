@@ -6,10 +6,12 @@ ruby '1.9.3'
 gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.8'
+group :development, :test do
+  gem 'sqlite3', '1.3.8'
+end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '4.0.1'
+gem 'sass-rails', '>= 4.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
